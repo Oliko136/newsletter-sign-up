@@ -14,14 +14,9 @@ function handleSubmit(e) {
 }
 
 function validateEmail(email) {
-    if (!email) {
-        renderError('Please enter an email address');
-    }
-
     const emailRegex = /^\S+@\S+$/g;
-    if (!emailRegex.test(email)) {
-        renderError('Valid email required');
-    }
+    
+    emailRegex.test(email) ? renderError(' ') : renderError('Valid email required');
 }
 
 function renderError(message) {
