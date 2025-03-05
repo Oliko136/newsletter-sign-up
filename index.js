@@ -9,7 +9,6 @@ function handleSubmit(e) {
     const formData = new FormData(e.target);
     const { email } = Object.fromEntries(formData);
 
-    console.log(email);
     validateEmail(email);
 }
 
