@@ -50,3 +50,11 @@ img {
 button {
     cursor: pointer;
 }
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-text);
+    line-height: var(--line-height-text);
+    color: var(--blue-800);
+    background-color: var(--blue-700);
+}
