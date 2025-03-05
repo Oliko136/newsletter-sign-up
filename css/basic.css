@@ -1,3 +1,31 @@
+:root {
+    --white: #FFFFFF;
+    --grey: #949494;
+    --blue-800: #242742;
+    --blue-700: #36384D;
+    --red: #FF6155;
+    --gradient: linear-gradient(90deg, #FF6A3A 0%, #FF527B 100%);
+    --font-family: 'Roboto', sans-serif;
+    --font-weight-bold: 700;
+    --font-size-title-desktop: 3.5rem;
+    --font-size-title-mobile: 2.5rem;
+    --font-size-text: 1rem;
+    --font-size-label: 0.75rem;
+    --line-height-title-desktop: 3.5rem;
+    --line-height-title-mobile: 2.5rem;
+    --line-height-text: 1.5rem;
+    --line-height-label: 1.125rem;
+    --spacing-100: 0.5rem;
+    --spacing-200: 1rem;
+    --spacing-300: 1.5rem;
+    --spacing-400: 2rem;
+    --spacing-500: 2.5rem;
+    --spacing-600: 3rem;
+    --spacing-800: 4rem;
+    --spacing-900: 4.5rem;
+    --spacing-1300: 6.5rem;
+}
+
 html {
     box-sizing: border-box;
 }
