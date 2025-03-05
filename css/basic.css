@@ -26,6 +26,18 @@
     --spacing-1300: 6.5rem;
 }
 
+@font-face {
+    font-family: var(--font-family);
+    src: url(../assets/fonts/Roboto-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: var(--font-family);
+    src: url(../assets/fonts/Roboto-Bold.ttf) format('truetype');
+    font-weight: var(--font-weight-bold);
+}
+
 html {
     box-sizing: border-box;
 }
