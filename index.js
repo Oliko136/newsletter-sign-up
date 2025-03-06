@@ -15,7 +15,6 @@ function handleSubmit(e) {
     const { email } = Object.fromEntries(formData);
 
     validateEmail(email);
-    form.reset();
 }
 
 function validateEmail(email) {
@@ -26,12 +25,21 @@ function validateEmail(email) {
 
 function renderError(message) {
     errorEl.textContent = message;
+    form.email.style.color = '#FF6155';
+    form.email.style.backgroundColor = '#FFE7E6';
+    form.email.style.borderColor = '#FF6155';
 }
 
 function renderSuccess(email) {
     cardEl.classList.add('is-hidden');
     successEl.classList.remove('is-hidden');
+
     emailSuccess.textContent = email;
+    errorEl.textContent = '';
+    form.reset();
+    form.email.style.color = '';
+    form.email.style.backgroundColor = '';
+    form.email.style.borderColor = '';
 }
 
 function handleDismiss() {
