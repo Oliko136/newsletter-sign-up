@@ -51,7 +51,7 @@ Users should be able to:
 
 ### What I learned
 
-I practiced working with forms using vanilla JavaScript, particularly retreiving data from a form and validating it. I also practiced manipulating DOM according to the validation outcome.
+I practiced working with forms using vanilla JavaScript, particularly retrieving data from a form and validating it. I also practiced manipulating DOM according to the validation outcome.
 
 ## Author
 
