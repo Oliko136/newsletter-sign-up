@@ -17,7 +17,7 @@
     padding: 0 var(--spacing-300);
 }
 
-.card_title {
+.title {
     font-size: var(--font-size-title-mobile);
     line-height: var(--line-height-title-mobile);
     font-weight: var(--font-weight-bold);
@@ -73,7 +73,7 @@
     color: var(--grey);
 }
 
-.form_button {
+.button {
     height: 56px;
     padding: var(--spacing-200) var(--spacing-600);
     border-radius: 8px;
@@ -83,11 +83,31 @@
     background-color: var(--blue-800);
 }
 
-.form_button:hover,
-.form_button:focus,
-.form_button:active {
+.button:hover,
+.button:focus,
+.button:active {
     background: var(--gradient);
     box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.50);
+}
+
+.success {
+    display: flex;
+    flex-direction: column;
+    gap: 16.44rem;
+    width: 375px;
+    padding: 149px 24px 70px 24px;
+    margin: auto;
+    background-color: var(--white);
+}
+
+.success_content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-400);
+}
+
+.success_email {
+    font-weight: var(--font-weight-bold);
 }
 
 @media screen and (min-width: 768px) {
@@ -109,13 +129,22 @@
         padding: 0;
     }
 
-    .card_title {
+    .title {
         font-size: var(--font-size-title-desktop);
         line-height: var(--line-height-title-desktop);
     }
 
     .form {
         gap: var(--spacing-200);
+    }
+
+    .success {
+        gap: var(--spacing-400);
+        width: 504px;
+        height: 520px;
+        padding: var(--spacing-800);
+        border-radius: 36px;
+        box-shadow: 0px 15px 60px 0px rgba(0, 0, 0, 0.25);
     }
 }
 

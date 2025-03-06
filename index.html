@@ -21,7 +21,7 @@
       </picture>
       <div class="card_content">
         <div class="card_info">
-          <h1 class="card_title">Stay updated!</h1>
+          <h1 class="title">Stay updated!</h1>
           <p class="card_text">Join 60,000+ product managers receiving monthly updates on:</p>
           <ul class="list">
             <li class="list_item">
@@ -45,10 +45,23 @@
             <input type="email" name="email" id="email" placeholder="email@company.com" autofocus class="form_input">
             <span aria-live="polite" id="email-error" class="form_error"></span>
           </div>
-          <button type="submit" class="form_button">Subscribe to monthly newsletter</button>
+          <button type="submit" class="button">Subscribe to monthly newsletter</button>
           </form>
       </div>
     </article>
+
+    <div class="success">
+      <div class="success_content">
+        <img src="./assets/images/icon-success.svg" alt="Big checkmark" width="64" height="64">
+        <h2 class="title">Thanks for subscribing!</h2>
+        <p class="success_message">
+          A confirmation email has been sent to <span class="success_email"></span>.
+          Please open it and click the button inside to confirm your subscription.
+        </p>
+      </div>
+
+        <button type="button" class="button" id="success-button">Dismiss message</button>
+      </div>
   </main>
 
 </body>
