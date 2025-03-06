@@ -73,6 +73,11 @@
     color: var(--grey);
 }
 
+.form_input:focus {
+    border: 1px solid var(--blue-800);
+    outline: transparent;
+}
+
 .button {
     height: 56px;
     padding: var(--spacing-200) var(--spacing-600);
