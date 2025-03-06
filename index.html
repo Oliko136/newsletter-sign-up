@@ -13,7 +13,7 @@
 <body>
 
   <main>
-    <article class="card">
+    <article class="card" id="card">
       <picture>
         <source media="(max-width: 1439px)" srcset="./assets/images/illustration-sign-up-mobile.svg">
         <source srcset="./assets/images/illustration-sign-up-desktop.svg">
@@ -50,12 +50,12 @@
       </div>
     </article>
 
-    <div class="success">
+    <div class="success is-hidden" id="success">
       <div class="success_content">
         <img src="./assets/images/icon-success.svg" alt="Big checkmark" width="64" height="64">
         <h2 class="title">Thanks for subscribing!</h2>
         <p class="success_message">
-          A confirmation email has been sent to <span class="success_email"></span>.
+          A confirmation email has been sent to <span class="success_email" id="email-success"></span>.
           Please open it and click the button inside to confirm your subscription.
         </p>
       </div>

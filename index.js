@@ -1,5 +1,8 @@
 const form = document.getElementById('form');
+const cardEl = document.getElementById('card');
 const errorEl = document.getElementById('email-error');
+const successEl = document.getElementById('success');
+const emailSuccess = document.getElementById('email-success');
 
 form.addEventListener('submit', handleSubmit);
 
@@ -23,5 +26,7 @@ function renderError(message) {
 }
 
 function renderSuccess(email) {
-
+    cardEl.classList.add('is-hidden');
+    successEl.classList.remove('is-hidden');
+    emailSuccess.textContent = email;
 }
